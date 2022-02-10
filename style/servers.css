@@ -1,0 +1,228 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scrollbar-width: none;
+    font-family: NoirPro-Regular;
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: none;
+}
+
+.bg {
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: no-repeat center url(../image/bg.png);
+    position: fixed;
+    z-index: -9999;
+}
+
+.conteiner {
+    max-width: 1200px;
+    height: min-content;
+    margin: 0 auto;
+}
+
+header {
+    width: 100%;
+    height: 78px;
+    left: 0px;
+    top: 0px;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    position: fixed;
+}
+
+.logo {
+    float: left;
+    height: 78px;
+}
+
+.logo img {
+    display: block;
+    margin-top: 7px;
+    width: 55px;
+    height: 63px;
+}
+
+nav {
+    overflow: hidden;
+    height: 78px;
+}
+
+ul {
+    list-style: none;
+    margin-left: 80px;
+    height: 78px;
+}
+
+nav li {
+    display: inline-block;
+    line-height: 75px;
+    border-top: 3px solid rgba(0, 0, 0, 0);
+    transition: border-top .8s;
+    height: 78px;
+}
+
+nav li:hover {
+    border-top: 3px solid #1CA633;
+}
+
+nav li:not(:last-child) {
+    margin-right: 17px;
+}
+
+nav a {
+    text-decoration: none;
+    font-family: NoirPro-Regular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 19px;
+    line-height: 27px;
+    color: #FFFFFF;
+}
+
+.logBut {
+    float: right;
+    display: inline-block;
+    line-height: 75px;
+    display: none;
+}
+
+.logBut a {
+    border: 3px solid #1CA633;
+    padding: 6px 48px;
+    transition: background-color .2s;
+    border-radius: 50px;
+}
+
+.logBut a:hover,
+.startBut:hover,
+.But:hover {
+    background-color: #1CA633;
+    color: #FFFFFF;
+}
+
+.But {
+    text-decoration: none;
+    color: #1CA633;
+    padding: 10px 30px;
+    border: 2px solid #1CA633;
+    border-radius: 50px;
+    display: ruby-base;
+    width: max-content;
+    max-width: 25px;
+    transition: .4s linear;
+    margin: 10px;
+}
+
+.Logo {
+    max-width: 60%;
+    margin: 150px auto;
+    transform: translate(0, 20%);
+    opacity: 0;
+    transition: .8s all linear;
+}
+
+.Logo img {
+    width: 720px;
+}
+
+.activ {
+    transform: translate(0, 0);
+    opacity: 1;
+}
+
+.serverInfo {
+    background: rgba(255, 255, 255, 0.871);
+    clip-path: polygon(50% 0%, 100% 10px, 100% 100%, 0 100%, 0 10px);
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    padding: 25px 10px;
+}
+
+.Info {
+    font-size: 18px;
+}
+
+.ava {
+    width: 260px;
+    margin: 0 auto;
+}
+
+
+/* Аккардион */
+
+.accordion {
+    background-color: rgb(181, 181, 181);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    font-size: 16px;
+}
+
+.active,
+.accordion:hover {
+    background-color: rgb(158, 158, 158);
+}
+
+.accordion:after {
+    content: '\25BC';
+    font-size: 13px;
+    color: rgb(0, 0, 0);
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\25B2";
+}
+
+.panel {
+    width: 100%;
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    margin-bottom: 5px;
+}
+
+
+/* Конец Аккардиона */
+
+.panel>p {
+    padding: 5px 0;
+}
+
+.panel a {
+    color: #000;
+}
+
+.link {
+    text-decoration-color: #1CA633;
+}
+
+footer {
+    width: 100%;
+    height: 65 px;
+    text-align: center;
+    background: #111;
+    padding: 5px;
+}
+
+footer img {
+    height: 30px;
+}
+
+footer div {
+    color: #fff;
+}
