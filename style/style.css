@@ -234,9 +234,9 @@ nav a {
     padding: 10px 30px;
     border: 2px solid #1CA633;
     border-radius: 50px;
-    display: ruby-base;
+    display: block;
     width: max-content;
-    max-width: 25px;
+    margin: 0 auto;
     transition: .4s linear;
 }
 
@@ -332,19 +332,37 @@ nav a {
     opacity: 1;
 }
 
-.vk {
+.vk i {
     background: linear-gradient(45deg, #1678f3, #0099ba, #1678f3);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-.yt {
+.vk p {
+    background: linear-gradient(45deg, #1678f3, #0099ba, #1678f3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.yt i {
     background: linear-gradient(45deg, #c3284d, #f53737);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-.ds {
+.yt p {
+    background: linear-gradient(45deg, #c3284d, #f53737);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.ds i {
+    background: linear-gradient(45deg, #4871b5, #1f4788, #4871b5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.ds p {
     background: linear-gradient(45deg, #4871b5, #1f4788, #4871b5);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
